@@ -158,7 +158,7 @@ const Project = () => {
       {/* Fourth project */}
       <div className='project-container' data-aos='fade-right'>
         <div className='project-text project-text-left'>
-          <h1 className='project-text-title'>Fakenews Detections</h1>
+          <h1 className='project-text-title'>Fakenews Detection</h1>
           <p>
             For this project, I used machine learning for detecting fake news by
             using those news content. Data chose for training ML of this

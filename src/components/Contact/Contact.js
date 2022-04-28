@@ -28,7 +28,7 @@ const Contact = () => {
       await Swal.fire({
         icon: 'error',
         title: 'Contact form was blank!',
-        text: 'You need to fillout required information on the contact form.',
+        text: 'You need to fill out required information on the contact form.',
       });
       return;
     }
