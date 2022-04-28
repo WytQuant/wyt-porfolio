@@ -40,7 +40,7 @@ const Skill = () => {
           </div>
         </div>
         <div className='soft-skill'>
-          <h2 className='soft-skill-title'>Soft skill</h2>
+          <h2 className='soft-skill-title'>Soft skills</h2>
           <div className='bsm-skill-container'>
             <p>Growth mindset</p>
           </div>
