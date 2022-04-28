@@ -1,0 +1,104 @@
+.navbar-section {
+  position: relative;
+  padding: 0.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: rgba(218, 220, 224, 0.8);
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 0.2rem;
+}
+
+.logo h1 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.nav-link,
+.my-project {
+  margin: 0 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #282424;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #777575;
+}
+
+.my-project {
+  padding: 0.5rem 1.5rem;
+  background: #282424;
+  border-radius: 0.5rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.my-project:hover {
+  background: #444141;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-section {
+    padding: 0.5rem 1rem;
+  }
+  .nav-item {
+    position: absolute;
+    top: 66px;
+    left: -150%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background: #282424;
+    opacity: 0;
+    transition: all 0.618s ease-in-out;
+  }
+
+  .nav-item.active {
+    left: 0;
+    opacity: 1;
+    transition: all 0.618s ease-in-out;
+  }
+
+  .nav-mobile {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .nav-link,
+  .my-project {
+    margin: 0;
+    padding: 1rem 0;
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: none;
+  }
+
+  .my-project:hover {
+    background: none;
+  }
+
+  .my-project {
+    background: none;
+  }
+}

@@ -1,0 +1,91 @@
+.main-section {
+  height: 100vh;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      90deg,
+      rgba(40, 36, 36, 0.6) 0%,
+      rgba(40, 36, 36, 0.6) 50%,
+      rgba(40, 36, 36, 0.6) 100%
+    ),
+    url('./background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.profile-picture img {
+  margin-right: 2rem;
+  border-radius: 1rem;
+}
+
+.statement {
+  padding: 2rem;
+  color: white;
+}
+
+.statement h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.statement p {
+  padding: 0 1rem;
+  text-indent: 2.5rem;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  border-left: 5px solid white;
+}
+
+.download-cv {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(139, 181, 206, 1) 20%,
+    rgba(205, 61, 97, 1) 95%
+  );
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.download-cv:hover {
+  box-shadow: 5px 5px white;
+}
+
+@media screen and (max-width: 480px) {
+  .main-section {
+    padding: 2rem;
+  }
+
+  .statement {
+    padding: 0;
+  }
+
+  .statement h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .profile-picture img {
+    display: none;
+  }
+  .download-cv {
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .download-cv:hover {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,67 @@
+#skill {
+  padding: 2rem 10rem;
+}
+
+.skills-title {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 0 0 3rem 0;
+}
+
+.skills-title::after {
+  display: block;
+  margin-top: 0.5rem;
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(139, 181, 206, 1) 20%,
+    rgba(205, 61, 97, 1) 50%,
+    rgba(234, 86, 88, 1) 100%
+  );
+  border-radius: 5px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.coding-skill-container {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.coding-skill-container img {
+  width: 50px;
+  margin: 0 1rem 0 0;
+}
+
+.coding-skill-container p {
+  font-size: 1.15rem;
+}
+
+.bsm-skill-container {
+  margin: 1.5rem 0;
+}
+
+.bsm-skill-container p {
+  font-size: 1.15rem;
+}
+
+@media screen and (max-width: 480px) {
+  #skill {
+    padding: 2rem;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .soft-skill {
+    margin-top: 2rem;
+  }
+}
