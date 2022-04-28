@@ -114,7 +114,7 @@ const Project = () => {
             The HeartRate project was developed by using MERN stack. The
             HeartRate allows users to record, create edit, and delete their
             activities. In additional, It also can provide the news about
-            Fitness and Nutrition to users
+            Fitness and Nutrition to users.
           </p>
           <div className='project-tools'>
             <div className='project-tool'>
