@@ -10,23 +10,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='navbar-section'>
-      <div className='logo'>
-        <img src='./images/blockchain-icon.png' alt='icon' />
+    <nav className="navbar-section">
+      <div className="logo">
+        <img src="./images/blockchain-icon.png" alt="icon" />
         <h1>Wyt</h1>
       </div>
       <div className={openNavMobile ? 'nav-item active' : 'nav-item'}>
-        <a className='nav-link' href='#main-section'>
-          About
+        <a className="nav-link" href="#main-section">
+          About me
         </a>
-        <a className='nav-link' href='#contact'>
+        <a className="nav-link" href="#contact">
           Contact
         </a>
-        <a className='my-project' href='#project'>
+        <a className="my-project" href="#project">
           Project
         </a>
       </div>
-      <div className='nav-mobile' onClick={handleClicktoOpenNavMobile}>
+      <div className="nav-mobile" onClick={handleClicktoOpenNavMobile}>
         {openNavMobile ? <FaTimes /> : <FaStream />}
       </div>
     </nav>
